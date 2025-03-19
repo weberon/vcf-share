@@ -20,15 +20,20 @@
     </style>
 </head>
 <body>
-    <h1>Scan the QR Code to Contact Me</h1>
-    <p>Click the button below to send me a text message.</p>
+    <h1>Connect with Me</h1>
+    <p>Please click the button below.</p>
+    <p>Add your name, Send SMS</p>
+    <p>Close SMS, return to this page</p>
+    <p>Download my contact card</p>
     <button onclick="launchSMSAndShowDownload()">Send SMS</button>
     <p id="downloadLinkContainer" style="display: none;">
-        <a id="vcardDownloadLink" href="your_vcard.vcf" download="your_vcard.vcf">Download vCard</a>
+        <a id="vcardDownloadLink" href="reachpersona.vcf" download="your_vcard.vcf">Download vCard</a>
     </p>
     <script>
         function launchSMSAndShowDownload() {
-            window.location.href = 'sms:+15551234567?body=Hello%20there,%20I%27m%20interested%20in%20connecting.';
+            let fullName = "Your Full Name";
+            let encodedFullName = encodeURIComponent(fullName);
+            window.location.href = 'sms:+19252332733?body=Hi,%20Let\'s%20connect.%20-%20' + encodedFullName;
             setTimeout(function() {
                 document.getElementById('downloadLinkContainer').style.display = 'block';
             }, 2000); // 2000 milliseconds (2 seconds) delay
