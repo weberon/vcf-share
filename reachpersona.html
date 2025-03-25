@@ -34,7 +34,7 @@
     </p>
     <script>
         function launchSMSAndShowDownload() {
-            let fullName = "FullName.";
+            let fullName = "(Name): ";
             let encodedFullName = encodeURIComponent(fullName);
             window.location.href = 'sms:+19252332733?body=Hi,%20I%20am%20' + encodedFullName;
             setTimeout(function() {
