@@ -36,7 +36,7 @@
         function launchSMSAndShowDownload() {
             let fullName = "Your Full Name";
             let encodedFullName = encodeURIComponent(fullName);
-            window.location.href = 'sms:+19252332733?body=Hi,%20Let\'s%20connect.%20-%20' + encodedFullName;
+            window.location.href = 'sms:+19252332733?body=Hi,%20I%20am%20' + encodedFullName;
             setTimeout(function() {
                 document.getElementById('downloadLinkContainer').style.display = 'block';
             }, 2000); // 2000 milliseconds (2 seconds) delay
