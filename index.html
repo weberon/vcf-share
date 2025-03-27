@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ReachPersona Contact</title>
+    <title>Praveen Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
@@ -18,25 +18,25 @@
             margin-top: 20px;
         }
         img {
-            max-width: 100%; /* Make image responsive */
+            max-width: 300px;
             height: auto;
             margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <img src="ReachPersona-LOGO-V3.png" alt="Logo">
+    <img src="Praveen-LOGO.png" alt="Logo">
     <p>Click Send SMS to Share your Name</p>
     <p>Close SMS, then Download Contact vCard</p>
     <button onclick="launchSMSAndShowDownload()">Send SMS</button>
     <p id="downloadLinkContainer" style="display: none;">
-        <a id="vcardDownloadLink" href="ReachPersona_vCard.vcf" download="ReachPersona_vCard.vcf">Download Contact vCard</a>
+        <a id="vcardDownloadLink" href="Praveen_vCard.vcf" download="Praveen_vCard.vcf">Download Contact vCard</a>
     </p>
     <script>
         function launchSMSAndShowDownload() {
             let fullName = "(Name): ";
             let encodedFullName = encodeURIComponent(fullName);
-            window.location.href = 'sms:+19252332733?body=Hi,%20I%20am%20' + encodedFullName;
+            window.location.href = 'sms:+15104383663?body=Hi,%20I%20am%20' + encodedFullName;
             setTimeout(function() {
                 document.getElementById('downloadLinkContainer').style.display = 'block';
             }, 2000); // 2000 milliseconds (2 seconds) delay
